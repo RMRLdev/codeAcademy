@@ -1,0 +1,23 @@
+*{
+    text-align: center;
+}
+h1,h2{
+    font-weight: bold;
+}
+table{
+    width:70%;
+    position: absolute;
+    left:15%;
+}
+th, tr td{
+    border:3px solid black;
+    background-color: beige;
+}
+.tag{
+    background-color: aqua;
+    font-family: monospace,serif;
+    text-decoration: underline;
+}
+ul{
+    margin-top:200px;
+}

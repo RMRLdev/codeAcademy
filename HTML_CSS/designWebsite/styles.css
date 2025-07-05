@@ -1,0 +1,52 @@
+h1{
+    text-decoration: underline;
+}
+div{
+    border:5px solid black;
+}
+div h2{
+    margin-left: 20px;
+}
+/*colors box*/
+.colorBox{
+    display: inline-block;
+    margin:2%;
+    padding:25px;
+}
+#Cone{
+    background-color: #2C3E50;
+    color:white;
+}
+#Ctwo{
+    color:black;
+    background-color: #ECECEC;
+}
+#Cthree{
+    color:white;
+    background-color: #1ABC9C;
+}
+#Cfour{
+    color:white;
+    background-color: #E67E22;
+}
+/*fonts section*/
+#fonts h3{
+    text-decoration: underline;
+}
+#fonts p{
+    display:inline-block;
+}
+#Fone{
+    font-family: Roboto;
+}
+#Ftwo{
+    font-family: "open sans";
+}
+#Fthree{
+    font-family: Lora;
+}
+
+/*text styles section*/
+#subH1{
+    text-decoration: none;
+}

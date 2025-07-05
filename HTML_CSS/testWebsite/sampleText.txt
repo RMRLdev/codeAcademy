@@ -1,0 +1,32 @@
+Welcome to My Coding Playground!
+🚀 Exploring Code, One Line at a Time
+About Me
+Hey there! I'm a coding enthusiast diving into web development, experimenting with HTML, CSS, and JavaScript. This site is my space to practice, break things, and learn along the way.
+What You'll Find Here
+✅ Mini Projects – Small coding experiments & interactive demos
+✅ Code Snippets – Useful functions & tricks for web development
+✅ Learning Notes – Things I’ve learned and want to remember
+✅ Challenges – Fun coding exercises to sharpen my skills
+Try This Interactive Button!
+<button onclick="alert('Hello, World!')">Click Me!</button>
+
+
+Latest Project: Dynamic To-Do List
+Want to build a simple to-do list? Try this JavaScript snippet:
+document.getElementById("addTask").addEventListener("click", function() {
+    let task = document.getElementById("taskInput").value;
+    if (task) {
+        let li = document.createElement("li");
+        li.textContent = task;
+        document.getElementById("taskList").appendChild(li);
+        document.getElementById("taskInput").value = "";
+    }
+});
+
+
+Connect With Me
+📧 Email: yourname@example.com
+🐦 Twitter: @yourhandle
+💻 GitHub: github.com/yourusername
+
+Would you like me to tailor this content for a specific theme or add more interactive elements? 🚀

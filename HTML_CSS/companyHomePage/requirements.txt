@@ -1,0 +1,134 @@
+Your site must include:
+- ✅ A title and a logo or splash image
+- ✅ A mission statement or brief description of the company
+- ✅ A list or gallery of images and titles showcasing the company’s product(s)
+- ✅ A section introducing company employees or teammates
+
+Layout Requirements
+Your site must:
+- ✅ Use Flexbox for layout
+- ✅ Demonstrate Flexbox features such as:
+- Horizontal and vertical positioning
+- Flexible element flow as page resizes
+- Dynamic styling for repeated elements
+- Example usage: navbar centering, responsive product list, responsive employee layout
+- ✅ Apply additional Flexbox properties (e.g. flex-grow, flex-shrink) creatively
+
+Styling Requirements
+Your site should:
+- ✅ Use custom colors (CSS named, hex, RGB, or HSL)
+- ✅ Include custom fonts (Google Fonts or others)
+- ✅ Feature custom images (e.g. from Unsplash or your own)
+- ✅ Customize other CSS properties such as borders, padding, and spacing
+
+
+
+
+
+
+
+🌿 GreenLoop — Eco Subscription Boxes
+🧭 Mission Statement
+At GreenLoop, we're redefining conscious consumption by
+ curating monthly boxes filled with sustainable, ethical, 
+ and innovative products. From bamboo toothbrushes to 
+ compostable tech accessories, we help you live 
+ greener—without sacrificing style or convenience.
+
+
+📦 Products Section
+Use a flexbox grid to showcase a rotating set of past 
+and upcoming boxes:
+- The Kitchen Kit
+— Compostable sponges, beeswax wraps, refillable 
+soap pods
+- The Wellness Pack
+— Organic teas, reusable facial rounds, lavender 
+sleep spray
+- The Tech Edition
+— Solar-powered chargers, biodegradable phone cases
+- The Starter Loop
+— Essentials for anyone new to sustainable living
+Use flex-wrap and gap spacing to make the layout 
+responsive and spacious.
+
+👥 Team Section
+Create profile cards with photos and bios:
+- Maya – Co-Founder & Product Curator
+Designs monthly boxes and sources products from 
+eco-certified vendors
+- Tariq – Environmental Analyst
+Verifies impact metrics and educates subscribers
+ via blog and tips
+- Lena – Community Lead
+Manages social campaigns and hosts monthly 
+“Unbox With Us” livestreams
+Each card can use flex-direction: column, with avatars, 
+names, and bios stacked neatly.
+
+🎨 Styling Notes
+- Color Palette:
+Shades of moss green, warm beige, and charcoal for 
+contrast
+- Font Pairing:
+Use Roboto for body text and Playfair Display or 
+Merriweather for headings
+- Imagery:
+Unsplash images of plants, recycled materials, 
+and cozy interiors
+- Details:
+Rounded corners, hover effects, minimalist icons, 
+and subtle background textures
+
+📱 Flexbox Usage Ideas
+- Centered navbar with logo + links
+- Responsive product gallery that adjusts between row 
+and column
+- Vertical alignment of employee profiles
+- Stretching footer with contact info and newsletter form
+
+Want me to sketch out a homepage layout in HTML and 
+CSS to get you started? I can also help generate p
+laceholder content or flexbox templates based on 
+this concept. Let’s make this lush and lightweight. 🌍
+
+
+
+
+
+
+html {
+  background-color: #F5F9F6; /* pale mint background */
+}
+
+header {
+  background-color: #E2EFDE; /* soft leafy green */
+}
+
+#productsSection {
+  background-color: #F3F7F4; /* light eco-neutral */
+}
+
+.item {
+  background-color: #2F4F2F; /* dark olive */
+}
+
+.item .content {
+  color: #FFFFFF;
+}
+
+footer {
+  background-color: #6DA34D; /* vibrant natural green */
+}
+html {
+  font-family: 'Merriweather', serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">

@@ -1,0 +1,173 @@
+
+#head{
+    background-color: black;
+    position: fixed;
+    min-width:100%;
+    top:0;
+    left:0;
+    border-bottom: 1px solid seashell;
+    z-index: 10;
+}
+#head img{
+    height: 50px;
+    margin-left:10px;
+    display:inline-flex;
+    position: absolute;
+    left:1px;
+}
+#head ul{
+    display:inline-flex;
+    /*text-align: right;*/
+    justify-content: end;
+    align-items: flex-end;
+    position: relative;
+    left:33.5%;
+}
+#head ul li{
+    color: grey;
+    text-decoration: underline;
+    display: inline-flex;
+    margin: auto 10px;
+    font-size: larger;
+}/*
+#head ul li+li::before{
+    content:">";
+    text-decoration: none;
+}*/
+div{
+    text-align: center;
+}
+div h2{
+    margin-bottom: 10px;
+}
+div#mission{
+    margin-top:71px;
+}
+div#mission img{
+    position: relative;
+    height:700px;
+    width:1200px;
+    margin:0px;
+    z-index: 0;
+    position:relative;
+    left:20px;
+}
+#missionText{
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    left:20px;
+    width: 1200px;
+    top: -400px;
+    z-index: 2;
+    align-content: flex-start;
+    flex-direction: column;
+    background-color: black;
+}
+/*
+display:flex;X
+position: xrelative;
+align-ixtems: center;
+top:-400px;
+*/
+#missionText h2{
+    color:white;
+    margin: 0 auto;
+    /*
+    left:600px;
+    z-index: 1;
+    */
+    width:600px;
+    text-align: center;
+    margin-bottom: 0;
+}
+/*
+display:flex;
+position:relative;
+align-items: center;
+top:-375px;
+z-index: 1;
+background-color: black;
+*/
+#missionText h4{
+    margin:0 auto;
+    width:700px;
+    color:white;
+    margin-top: 0px;
+}
+/*
+#container {
+    width: 640px; /* Can be in percentage also. 
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+}
+*/
+div#teaMonth{
+    margin: 0 auto;
+}
+#teaMonth{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
+    justify-content: center;
+}
+div#teaMonth figure img{
+    width:300px;
+    height:200px;
+    display: inline-flex;
+}
+#teaMonth figure figcaption{
+    margin-top: 10px;
+}/*
+#locations{
+    border: 3px red solid;
+    height: 500px;
+    align-items: center;
+    position: relative;
+    max-width: 1300px;
+    display: inline-flex;
+    justify-content: space-between;
+}
+#locations div div p{
+    display: inline-flex;
+    justify-content: space-between;
+
+}*/
+#locations{
+    border:black 3px solid;
+    height:500px;
+    background-image:url("../media/img-locations-background.jpg");
+    
+}
+
+#locations h2{
+    margin-bottom: 0;
+    color: white;
+}
+#locations div{
+    display:inline-flex;
+    width:300px;
+    flex-direction: column;
+    margin-top:15px;
+    margin-left: 20px;
+    color:white;
+    background-color:black;
+    opacity: 1;
+}
+footer{
+    height:200px;
+}
+footer h3,h5{
+    position:relative;
+    left:45%;
+    margin-left: 0%;
+}
+footer p{
+    position:relative;
+    left:20px;
+}
+
+
+

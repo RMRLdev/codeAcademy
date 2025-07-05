@@ -1,0 +1,360 @@
+html{
+    font-size: 16px;
+    background-color: #8A9A5B;
+    font-family: 'DM Serif Display', serif;
+
+    min-width: 375px;
+}
+body{
+    margin:0px;
+    overflow-x: auto;
+    font-family: 'DM Serif Display', serif;
+
+}
+h1{
+    text-align: center;
+    margin-top: 89px;
+}
+h1,h2,h3{
+    font-family: 'DM Serif Display', serif;
+
+}
+#titleMain{
+    display:none;
+}
+/*
+header section
+*/
+header{
+    position:fixed;
+    width: 100%;
+    height:100px;
+    background-color: #E2EFDE;
+    z-index: 10;
+}
+header #head{
+    display:flex;
+    align-items: center;
+    
+}
+
+#head #titleHead{
+    margin: 0;
+}
+
+header #head nav{
+    position: static;
+    right:1.875rem;
+    color:black;
+    font-size: 1.8rem;
+    
+}
+nav a {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+nav ul{
+    padding-left:25px;
+}
+nav ul li{
+    display:inline;
+}
+
+header a img{
+    width:90px;
+    max-height: 100%;
+    border:3px solid grey;
+    border-radius: 50%;
+    margin-top: 2px;
+}
+/*tablet viewport*/
+@media screen and (max-width:770px) and (min-width:481px){
+    header #head nav{
+        justify-self: anchor-center;
+        right:5px;
+        font-size: larger;
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    #head #titleHead{
+        display:none;
+    }
+    #titleMain{
+        display: block;
+        margin-top: 0px;
+        position: relative;
+        top:100px;
+    }
+    #head nav{
+        margin-left: 10px;
+    }
+    #head nav ul{
+        padding-left: 0;
+    }
+}
+/*mobile viewport*/
+@media screen and (max-width:480px) {
+    header #head nav{
+        font-size: 18px;
+        right:5px;
+        justify-self: anchor-center;
+        margin-left: auto;
+    }
+}
+/*
+#head{
+    height:2%;
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 10;
+    border:5px solid red;
+}
+
+#head img{
+    display: inline-flex;
+    margin-left: 10px;
+    position: absolute;
+    left:1px;
+}
+
+nav{
+    display:inline-flex;
+    flex-direction: row;
+    position: relative;
+    
+    right:50px;
+}
+nav ul li{
+    display: inline;
+}
+
+a img{
+    width:5%;
+}*/
+/*
+mission section
+*/
+#mission{
+    padding: 80px 0;
+    background-image: url("./media/greenloopBanner.png");
+    background-size: 100% 100%;
+    margin:auto;
+    text-align: center;
+    height: 300px;
+    position: relative;
+    top:89px;
+    width:75%;
+    color: #203D06;
+    /* top | right | bottom | left */
+    margin:0 12.5% 5px 12.5%;
+    
+}
+#mission #statment, #mission span{
+    font-size: x-large;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.99);
+}
+/*tablet viewport*/
+@media screen and (max-width:770px) and (min-width:481px){
+    #mission{
+        margin:0px;
+        width: 100%;
+    }
+    #mission #statment,#mission span{
+        font-size:medium;
+    }
+}
+/*mobile viewport*/
+@media screen and (max-width:480px){
+    #mission{
+        margin:0px;
+        width: 100%;
+    }
+    #mission #statment, #mission span{
+        font-size: large;
+    }
+}
+/*
+products section
+*/
+/*
+#products{
+    display: flex;
+    justify-content: space-between;
+    background-color: beige;
+}
+.collection{
+    display:grid;
+    grid-template-rows: repeat(4,200px);
+    grid-template-columns: 1fr;
+    margin:auto;
+    position: relative;
+    top:89px;
+}
+.productGrid{
+    display:grid;
+    height: 1000px;
+    grid-template-rows: repeat(10,1fr);
+    grid-template-columns: repeat(5,1fr);
+}
+.productGrid h3{
+    grid-area: 1 / 3 / 2 / 6;
+    font-size: x-large;
+}
+.productGrid img{
+    grid-area: 2 / 1 / 6 / 6;
+    width:auto;
+    height: auto;
+}
+
+.productGrid #wellness img{
+    grid-area: 2 / 1 / 6 / 6;
+    width:auto;
+    height: auto;
+}
+.productGrid span{
+    grid-area: 3 / 1 / 6 / 6;
+    text-align: center;
+}
+    features-section=productsSection
+      feature="item"
+      center=content
+      image-container=image
+      content=text-
+
+*/
+#productsSection{
+    display: flex;
+    justify-content: space-between;
+    background-color: #465e00;
+    padding-bottom: 50px;
+}
+.item{
+    flex:1;
+    padding:2rem;
+    margin: 0 1.25rem;
+    background-color: #465e00;
+}
+.item:hover{
+    transform:scale(1.02)
+}
+.item .content{
+    width:100%;
+    height: 100%;
+    color: black;
+}
+.item .image{
+    width:90%;
+    height: auto;
+    margin: 0 auto;
+    object-fit: contain;
+}
+.item .image img{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+.item .content{
+    color: black;
+}
+/*mobile viewport*/
+@media screen and (max-width:480px) {
+    #productsSection{
+        flex-direction: column;
+    }
+    
+    .item{
+        padding:0;
+        margin:0;
+    }
+        
+}
+/*tablet viewport*/
+@media screen and (max-width:770px) and (min-width:481px){
+    #productsSection{
+        flex-wrap: wrap;
+        flex-direction: column;
+        min-width: 375px;
+    }
+    .item{
+        padding:0;
+        margin: 0;
+        margin-bottom: 2px;
+        flex-shrink: 1;
+    }
+    .item .content{
+        display: flex;
+        flex-direction:row;
+    }
+    .item .image {
+        height:100px;
+        width:28%;
+        margin:0;
+    }
+    
+}
+/*
+team section
+883x1104
+*/
+#team{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#team .person{
+    border:3px solid black;
+    text-align: center;
+    width:50%;
+    box-shadow: 10px 5px 5px  5px black;
+    padding-bottom: 20px;
+}
+#team .person img{
+    width:200px;
+    height: auto;
+    display: inline-flex;
+    
+}
+h1#teamh1{
+    margin-top:0;
+}
+figcaption{
+    text-align: center;
+}
+/*mobile viewport*/
+@media screen and (max-width:770px) and (min-width:481px){
+    .person{
+        padding:0;
+        margin:0;
+        max-width: 400px;
+        flex-shrink: 3;
+    }
+    .person .content{
+        flex-shrink: 3;
+    }
+    figcaption{
+        width: 300px;
+    }
+}
+/*
+footer section
+*/
+footer{
+    background-color: #000000;
+    width: 100%;
+}
+footer span{
+    margin:0 10%;
+    height: 100px;
+    color: white;
+}
+
+
+
+
