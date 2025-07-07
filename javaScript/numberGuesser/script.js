@@ -11,6 +11,9 @@ function getAbsoluteDistance(num1,num2){
     return num1-num2;
 }
 function compareGuesses(human,computer,secret){
+    if(human<0||human>9){
+        alert("please use a number between 0 and 9");
+    }
     /*checks if the difference between the huamn guess 
     and the secret number is smaller than the difference 
     between the computer guess and the secret number
