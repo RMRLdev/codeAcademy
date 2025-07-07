@@ -25,3 +25,6 @@ function updateScore(winner){
         console.log("error");
     }
 }
+function advanceRound(){
+    currentRoundNumber++;
+}
