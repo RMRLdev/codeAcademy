@@ -16,4 +16,12 @@ function compareGuesses(human,computer,secret){
         return true;
     }else {return false;}
 }
-console.log(compareGuesses(1,2,3));
+function updateScore(winner){
+    if(winner==='human'){
+        humanScore++;
+    }else if(winner==='computer'){
+        computerScore++;
+    }else{
+        console.log("error");
+    }
+}
