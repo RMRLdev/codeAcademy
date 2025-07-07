@@ -8,7 +8,7 @@ function generateTarget(){
     return Math.floor(Math.random()*9);
 }
 function getAbsoluteDistance(num1,num2){
-    return num1-num2;
+    return Math.abs(num2-num1);
 }
 function compareGuesses(human,computer,secret){
     if(human<0||human>9){
@@ -18,10 +18,11 @@ function compareGuesses(human,computer,secret){
     and the secret number is smaller than the difference 
     between the computer guess and the secret number
     */
-    if(getAbsoluteDistance(human,secret)<getAbsoluteDistance(computer-secret)){
+    if(getAbsoluteDistance(human,secret)<=getAbsoluteDistance(computer,secret)){
         return true;
     }else {return false;}
 }
+
 function updateScore(winner){
     if(winner==='human'){
         humanScore++;

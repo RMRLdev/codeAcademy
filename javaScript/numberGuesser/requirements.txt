@@ -11,7 +11,8 @@ Create a compareGuesses() function. This function:
 Has three parameters representing the user (human) guess, 
 a computer guess, and the secret target number to be guessed.
 Determines which player (human or computer) wins based on 
-which guess is closest to the target. If both players are tied, the human user should win.
+which guess is closest to the target. If both players are 
+tied, the human user should win.
 Return true if the human player wins, and false if the
  computer player wins.
 The purpose of this function is to be called each round 
@@ -55,6 +56,7 @@ guess to the target and from the human guess to the target.
 Move this into a separate getAbsoluteDistance() function 
 that takes two numbers and returns the distance, 
 and then use that inside your compareGuesses() function.
+
 Add functionality to check whether the user guess is between
  0 and 9 and alert() the user that their number is out 
  of range. It’s not possible to set a number outside this 
