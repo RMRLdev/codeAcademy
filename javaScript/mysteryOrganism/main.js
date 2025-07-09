@@ -51,3 +51,13 @@ function pAequorFactory(id,bases){
     }
     return DNA;
 }
+let survied=[];
+let counter=0;
+let temp;
+do{
+    temp=pAequorFactory(counter,mockUpStrand());
+    counter++;
+    if(temp.willLikelysurvive()===true){
+        survied.push(temp);
+    }
+}while(survied.length<31);
