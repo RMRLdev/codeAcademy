@@ -12,3 +12,6 @@ const mockUpStrand = () => {
   }
   return newStrand;
 };
+function pAequorFactory(id,bases){
+    
+}
