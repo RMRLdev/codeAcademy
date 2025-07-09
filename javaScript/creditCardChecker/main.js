@@ -98,7 +98,15 @@ function idInvalidCardCompanies(inArrgument){
     return outArray;
 }
 //console.log(idInvalidCardCompanies(findInvalidCards(batch)));
-
+function toCardNumber(inStr){
+    let converted=[]
+    for(let i=0;i<inStr.length;i++){
+        if(!isNaN(inStr[i])){
+            converted.push(parseInt(inStr[i]));
+        }
+    }
+    return converted;
+}
 
 
 
