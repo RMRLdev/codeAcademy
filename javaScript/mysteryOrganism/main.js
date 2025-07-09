@@ -26,6 +26,16 @@ function pAequorFactory(id,bases){
                 }
             }while(random===tempBase);
             return bases;
+        },
+        compareDNA(inobj){
+            let count=0;
+            for(let i=0;i<inobj.length;i++){
+                if(this.DNA[i]===inobj[i]){
+                    count++;
+                }
+            }
+            console.log(`specimen 1 and specimen 2 have ${(count/inobj.length)*100}% in common`)
         }
     }
+    return DNA;
 }
