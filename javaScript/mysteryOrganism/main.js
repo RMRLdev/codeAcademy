@@ -14,7 +14,8 @@ const mockUpStrand = () => {
 };
 function pAequorFactory(id,bases){
     var DNA={
-
+        id,
+        bases,
         mutate(bases) {
             let randomBase=Math.random()*(bases.length);
             let tempBase=bases[randomBase];
@@ -47,6 +48,29 @@ function pAequorFactory(id,bases){
             if(countC/dna.length>0.6){
                 return true;
             }else{return false;}
+        },
+        complementStrand(){
+            let complement=[];
+            let currentbase;
+            let dna=this.bases;
+            for (let i=0;i<dna.length;i++){
+                currentbase=dna[i];
+                switch(currentbase){
+                    case 'A':
+                        complement.push('T');
+                        break;
+                    case 'T':
+                        complement.push('A');
+                        break;
+                    case 'C':
+                        complement.push('G');
+                        break;
+                    case 'G':
+                        complement.push('C');
+                        break;
+                }
+            }
+            return complement;
         }
     }
     return DNA;
@@ -60,4 +84,5 @@ do{
     if(temp.willLikelysurvive()===true){
         survied.push(temp);
     }
-}while(survied.length<31);
+}while(survied.length<30);
+//console.log(survied);
