@@ -13,5 +13,19 @@ const mockUpStrand = () => {
   return newStrand;
 };
 function pAequorFactory(id,bases){
-    
+    var DNA={
+
+        mutate(bases) {
+            let randomBase=Math.random()*(bases.length);
+            let tempBase=bases[randomBase];
+            let random=0;
+            do{
+                random=returnRandBase();
+                if(random!==tempBase){
+                    bases[randomBase]=random;
+                }
+            }while(random===tempBase);
+            return bases;
+        }
+    }
 }
