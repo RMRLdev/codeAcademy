@@ -28,7 +28,7 @@ function validateCred(inArray){
     let total=0;
     let temp=0;
     for(let i=inArray.length-2;i>=0;i-=2){
-        //console.log(inArray[i]);
+        //console.log(inArray[i+1],inArray[i]);
         temp=inArray[i];
         if(temp*2>9){
             total=total+((temp*2)-9);
@@ -39,13 +39,25 @@ function validateCred(inArray){
         }
         total+=inArray[i+1];
     }
+    if(inArray.length%2!==0){
+        total+=inArray[0];
+    }
     //console.log("W"+total%10);
     if(total%10===0){
         return true;
     }else{return false;}
 }
-console.log(validateCred(valid1));
-
+//console.log(validateCred([4, 6, 7, 0 ,9 ,7 ,0, 8 ,6 ,3 ,4 ,2 ,2 ,4 ,5]));
+function findInvalidCards(inArr){
+    let outArr=[];
+    for (let i=0;i<inArr.length;i++){
+        if(validateCred(inArr[i])===false){
+            outArr.push(inArr[i]);
+        }
+    }
+    return outArr;
+}
+//console.log(findInvalidCards(batch));
 
 
 
