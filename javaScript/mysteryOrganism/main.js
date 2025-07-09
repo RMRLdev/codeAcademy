@@ -30,11 +30,23 @@ function pAequorFactory(id,bases){
         compareDNA(inobj){
             let count=0;
             for(let i=0;i<inobj.length;i++){
-                if(this.DNA[i]===inobj[i]){
+                if(this.bases[i]===inobj[i]){
                     count++;
                 }
             }
             console.log(`specimen 1 and specimen 2 have ${(count/inobj.length)*100}% in common`)
+        },
+        willLikelysurvive(){
+            let countC=0;
+            let dna=this.bases;
+            for(let i=0;i<dna.length;i++){
+                if(dna[i]==='C'||dna[i]==='G'){
+                    countC++;
+                }
+            }
+            if(countC/dna.length>0.6){
+                return true;
+            }else{return false;}
         }
     }
     return DNA;
