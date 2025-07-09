@@ -16,21 +16,21 @@ function pAequorFactory(id,bases){
     var DNA={
         id,
         bases,
-        mutate(bases) {
-            let randomBase=Math.random()*(bases.length);
-            let tempBase=bases[randomBase];
+        mutate() {
+            let randomBase=Math.random()*(this.bases.length);
+            let tempBase=this.bases[randomBase];
             let random=0;
             do{
                 random=returnRandBase();
                 if(random!==tempBase){
-                    bases[randomBase]=random;
+                    this.bases[randomBase]=random;
                 }
             }while(random===tempBase);
-            return bases;
+            return this.bases;
         },
         compareDNA(inobj){
             let count=0;
-            for(let i=0;i<inobj.length;i++){
+            for(let i=0;i<this.bases.length;i++){
                 if(this.bases[i]===inobj[i]){
                     count++;
                 }
