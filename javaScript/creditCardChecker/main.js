@@ -25,11 +25,26 @@ const batch = [valid1, valid2, valid3, valid4, valid5, invalid1, invalid2, inval
 
 // Add your functions below:
 function validateCred(inArray){
-    for(let i=inArray.length-1;i>0;i--){
-        console.log(inArray[i]);
+    let total=0;
+    let temp=0;
+    for(let i=inArray.length-2;i>=0;i-=2){
+        //console.log(inArray[i]);
+        temp=inArray[i];
+        if(temp*2>9){
+            total=total+((temp*2)-9);
+            //console.log(">"+total);
+        }else{
+            total+=temp*2;
+            //console.log("<"+total);
+        }
+        total+=inArray[i+1];
     }
+    //console.log("W"+total%10);
+    if(total%10===0){
+        return true;
+    }else{return false;}
 }
-//validateCred(valid1);
+console.log(validateCred(valid1));
 
 
 
