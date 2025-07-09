@@ -58,7 +58,46 @@ function findInvalidCards(inArr){
     return outArr;
 }
 //console.log(findInvalidCards(batch));
-
+function removeDuplicates(duplicates){
+    let cleanArray=[];
+    for(let i=0;i<duplicates.length;i++){
+        let tempitem=duplicates[i];
+        if(duplicates.indexOf(tempitem,i+1)===-1){
+            cleanArray.push(tempitem);
+        }
+    }
+    //console.log(cleanArray);
+    return cleanArray;
+}
+//removeDuplicates([1, 2, 3, 2, 4, 5, 4, 5])
+function idInvalidCardCompanies(inArrgument){
+    let outArray=[];
+    let invalidCardComp=[]
+    for(let i=0;i<inArrgument.length;i++){
+        switch(inArrgument[i][0]){
+            case 3:
+                invalidCardComp.push("Amex");
+                break;
+            case 4:
+                invalidCardComp.push("Visa");
+                break;
+            case 5:
+                invalidCardComp.push("Mastercard");
+                break;
+            case 6:
+                invalidCardComp.push("Discover");
+                break;
+            default:
+                console.log("Company not found");
+                break;
+        }
+    }
+    //console.log(invalidCardComp);
+    outArray=removeDuplicates(invalidCardComp);
+    //console.log(outArray);
+    return outArray;
+}
+//console.log(idInvalidCardCompanies(findInvalidCards(batch)));
 
 
 
