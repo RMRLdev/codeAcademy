@@ -22,6 +22,8 @@ header {
     width:100%;
     height: 100px;
     right:0px;
+    background-color: white;
+    z-index: 10;
 }
 header h1{
     margin:auto;
@@ -40,6 +42,17 @@ header nav ul li{
 }
 header nav ul li img{
     display: none;
+}
+@media screen and (min-width:490px) and (max-width:760){
+    
+}
+@media screen and (max-width:490px){
+    header h1{
+        font-size: large;
+    }
+    header nav ul{
+        padding-left:0px;
+    }
 }
 
 /*about section*/
@@ -65,11 +78,30 @@ header nav ul li img{
 #projects ul li a:visited{
     color:grey;
 }
+@media screen and (max-width:490px){
+    #about #content{
+        flex-direction: column-reverse;
+    }
+}
 
 /*skills section*/
+@media screen and (max-width:490px){
+    #skills{
+        max-width: 100%;
+    }
+    #skills ul{
+        flex-wrap: wrap;
+    }
+}
 
 /*footer/contact section*/
 footer{
     position: relative;
     top:150px;
+}
+@media screen and (max-width:490px){
+    #footer ul{
+        justify-content: space-between;
+        padding: 0;
+    }
 }
