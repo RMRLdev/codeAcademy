@@ -1,4 +1,45 @@
+/*global changes*/
+main{
+    position: relative;
+    top:100px;
+}
 img{
     height:50px;
     width:50px;
 }
+ul{
+    display: flex;
+    list-style-type: none;
+}
+ul li{
+    padding:0px 10px;
+}
+/*header section*/
+header {
+    display: flex;
+    position: fixed;
+    top:0px;
+    width:100%;
+    height: auto;
+}
+header h1{
+    display: flex;
+}
+header nav ul{
+    align-items: center;
+}
+header nav ul li{
+    display: flex;
+    align-items: center;
+}
+header img{
+    display: none;
+}
+
+/*about section*/
+
+/*projects section*/
+
+/*skills section*/
+
+/*footer/contact section*/
