@@ -21,9 +21,15 @@ header {
     top:0px;
     width:100%;
     height: auto;
+    right:0px;
 }
 header h1{
+    margin-right: 24%;
+}
+header nav{
     display: flex;
+    position: relative;
+    right:10px;
 }
 header nav ul{
     align-items: center;
@@ -32,7 +38,7 @@ header nav ul li{
     display: flex;
     align-items: center;
 }
-header img{
+header nav ul li img{
     display: none;
 }
 
@@ -43,3 +49,7 @@ header img{
 /*skills section*/
 
 /*footer/contact section*/
+footer{
+    position: relative;
+    top:100px;
+}
