@@ -1,7 +1,7 @@
 /*global changes*/
 main{
     position: relative;
-    top:100px;
+    top:150px;
 }
 img{
     height:50px;
@@ -20,11 +20,11 @@ header {
     position: fixed;
     top:0px;
     width:100%;
-    height: auto;
+    height: 100px;
     right:0px;
 }
 header h1{
-    margin-right: 24%;
+    margin:auto;
 }
 header nav{
     display: flex;
@@ -71,5 +71,5 @@ header nav ul li img{
 /*footer/contact section*/
 footer{
     position: relative;
-    top:100px;
+    top:150px;
 }
