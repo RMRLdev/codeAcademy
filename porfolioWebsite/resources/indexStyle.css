@@ -55,6 +55,16 @@ header nav ul li img{
 }
 
 /*projects section*/
+#projects ul{
+    list-style-type: disc;
+    display: block;
+}
+#projects ul li a{
+    color:purple;
+}
+#projects ul li a:visited{
+    color:grey;
+}
 
 /*skills section*/
 
