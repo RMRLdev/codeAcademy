@@ -43,6 +43,16 @@ header nav ul li img{
 }
 
 /*about section*/
+#about #content{
+    display: flex;
+    align-items: center;
+}
+#profilePic{
+    height:200px;
+    width:auto;
+    position:relative;
+    margin-left: 20px;
+}
 
 /*projects section*/
 
