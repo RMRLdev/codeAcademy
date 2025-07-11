@@ -12,7 +12,7 @@ ul{
     list-style-type: none;
 }
 ul li{
-    padding:0px 10px;
+    padding:0px 3%;
 }
 /*header section*/
 header {
@@ -27,14 +27,17 @@ header {
 }
 header h1{
     margin:auto;
+    margin-left: 5%;
 }
 header nav{
     display: flex;
     position: relative;
     right:10px;
+    width: 500px;
 }
 header nav ul{
     align-items: center;
+    width: -webkit-fill-available;
 }
 header nav ul li{
     display: flex;
@@ -60,11 +63,14 @@ header nav ul li img{
     display: flex;
     align-items: center;
 }
+#content p{
+    width: 75%;
+}
 #profilePic{
     height:200px;
     width:auto;
     position:relative;
-    margin-left: 20px;
+    margin: 0px 20px;
 }
 
 /*projects section*/
@@ -85,6 +91,12 @@ header nav ul li img{
 }
 
 /*skills section*/
+#skills ul{
+    flex-wrap: wrap;
+}
+#skills ul li p{
+    display: none;
+}
 @media screen and (max-width:490px){
     #skills{
         max-width: 100%;
