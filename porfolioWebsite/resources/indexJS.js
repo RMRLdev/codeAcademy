@@ -1,4 +1,6 @@
 //console.log("testing");
+console.log(window.innerWidth);
+//document.getElementById('top').innerHTML=window.innerWidth;
 let logoElements=document.getElementById('skills').getElementsByClassName('logo');
 function growLogo(event){
     //console.log("Q");
@@ -17,7 +19,7 @@ function shrinkLogo(event){
     event.currentTarget.querySelector('p').style.paddingLeft='0';
 }
 //#skills > ul > li:nth-child(2) > p
-document.getElementById('skills').addEventListener("click", growLogo);
+//document.getElementById('skills').addEventListener("click", growLogo);
 //logo.addEventListener('mouseover',growLogo);
 //console.log(logoElements.length);
 for(let i=0;i<logoElements.length;i++){
