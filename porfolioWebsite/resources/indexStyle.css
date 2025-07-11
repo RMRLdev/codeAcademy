@@ -46,8 +46,10 @@ header nav ul li{
 header nav ul li img{
     display: none;
 }
-@media screen and (min-width:490px) and (max-width:760){
-    
+@media screen and (min-width:491px) and (max-width:760px){
+    header nav ul li a{
+        text-align: -webkit-center;
+    }
 }
 @media screen and (max-width:490px){
     header h1{
@@ -71,6 +73,16 @@ header nav ul li img{
     width:auto;
     position:relative;
     margin: 0px 20px;
+}
+@media screen and (min-width:491px) and (max-width:760px){
+    #about #content {
+        flex-direction: column;
+        align-items: normal;
+    }
+    #profilePic{
+        height: 500px;
+        max-width: 600px;
+    }
 }
 
 /*projects section*/
@@ -110,6 +122,25 @@ header nav ul li img{
 footer{
     position: relative;
     top:150px;
+}
+footer .logo{
+    display: flex;
+    align-items: center;
+}
+@media screen and (min-width:491px) and (max-width:760px){
+    footer ul{
+        padding-left: 0px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        width:100%;
+    }
+    footer .logo img{
+        height: 75px;
+        width: 75px;
+    }
+    footer .logo span{
+        font-size: large;
+    }
 }
 @media screen and (max-width:490px){
     #footer ul{
