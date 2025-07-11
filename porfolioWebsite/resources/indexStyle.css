@@ -57,6 +57,15 @@ header nav ul li img{
     }
     header nav ul{
         padding-left:0px;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        justify-items: end;
+    }
+    header nav ul li a img{
+        display: block;
+    }
+    header nav ul li a span{
+        display: none;
     }
 }
 
@@ -146,5 +155,12 @@ footer .logo{
     #footer ul{
         justify-content: space-between;
         padding: 0;
+    }
+    #footer .logo img{
+        width:100px;
+        height: auto;
+    }
+    #footer .logo span{
+        display: none;
     }
 }
